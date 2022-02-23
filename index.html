@@ -1,15 +1,72 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-        <title>Cloud9 Beats</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        
-        <script src="" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FONT FOR SOUND KEYS -->
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    
+    <!-- TONE.JS LIBRARY FOR PLAYING SOUNDS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.37/Tone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.37/Tone.min.js"></script>
+    
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div id="timeline">
+
+    </div>
+    <div id="sound-board">
+        <div class="row">
+            <div class="sound-btn" id="kick1">KICK<br>1</div>
+            <div class="sound-btn" id="kick2">KICK<br>2</div>
+            <div class="sound-btn" id="kick3">KICK<br>3</div>
+            <div class="sound-btn" id="kick4">KICK<br>4</div>
+            <div class="sound-btn" id="hat1">Hat<br>1</div>
+            <div class="sound-btn" id="hat2">Hat<br>2</div>
+            <div class="sound-btn" id="hat3">Hat<br>3</div>
+            <div class="sound-btn" id="snare1">Snare<br>1</div>
+            <div class="sound-btn" id="snare2">Snare<br>2</div>
+            <div class="sound-btn" id="snare3">Snare<br>3</div>
+        </div>
+        <div class="row">
+            <div class="sound-btn" id="_808-1">808<br>1</div>
+            <div class="sound-btn" id="_808-2">808<br>2</div>
+            <div class="sound-btn" id="_808-3">808<br>3</div>
+            <div class="sound-btn" id="_808-4">808<br>4</div>
+            <div class="sound-btn" id="_808-5">808<br>5</div>
+            <div class="sound-btn" id="_808-6">808<br>6</div>
+            <div class="sound-btn" id="guitar1">Guitar<br>1</div>
+            <div class="sound-btn" id="guitar2">Guitar<br>2</div>
+            <div class="sound-btn" id="guitar3">Guitar<br>3</div>
+        </div>
+        <div class="row">
+            <div class="sound-btn"id="clap1">Clap 1</div>
+            <div class="sound-btn"id="clap2">Clap 2</div>
+            <div class="sound-btn"id="cymbal1">Cymbal 1</div>
+            <div class="sound-btn"id="cymbal2">Cymbal 2</div>
+            <div class="sound-btn"id="VOC1">VOC 1</div>
+            <div class="sound-btn"id="VOC2">VOC 2</div>
+            <div class="sound-btn"id="guitar4">Guitar 4</div>
+        </div>
+    </div>
+    <!-- <div id="sounds-container">
+        <div class="sound-btn" onclick="play(kick1)">Kick 1</div>
+        <div class="sound-btn" onclick="play(snare)">Kick 2</div>
+    </div> -->
+
+</body>
+
 </html>
