@@ -8,40 +8,37 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
 
-      <script src="app.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    </head>
+</head>
 
 <body>
     <div id="timeline">
-        <div class="loops" onclick="playLoop(comingDown)">
+        <div class="loops" id="comingDown" onclick="playLoop(comingDown, 'comingDown')">
             Coming Down
         </div>
-        <div class="loops" onclick="playLoop(atlantis)">
+        <div class="loops" id="atlantis" onclick="playLoop(atlantis, 'atlantis')">
             Atlantis
         </div>
-        <div class="loops" onclick="playLoop()">
-            Atlantis
+        <div class="loops" id="gm" onclick="playLoop(digitalGM, 'gm')">
+            DIGITAL GM
         </div>
-        <div class="loops" onclick="playLoop()">
-            Atlantis
+        <div class="loops" id="am" onclick="playLoop(digitalAM, 'am')">
+            DIGITAL AM
         </div>
-        <div class="loops" onclick="playLoop()">
-            Atlantis
+        <div class="loops" id="fm" onclick="playLoop(digitalFM ,'fm')">
+            DIGITAL FM
         </div>
     </div>
     <div id="sound-board">
         <div class="row">
-            <div class="sound-btn" id="kick1" onclick="play(kick)">KICK<br>1</div>
-            <div class="sound-btn" id="kick2" onclick="test1()">KICK<br>2</div>
+            <div class="sound-btn" id="kick1" onclick="play(kick1)">KICK<br>1</div>
+            <div class="sound-btn" id="kick2" onclick="test()">KICK<br>2</div>
             <div class="sound-btn" id="kick3">KICK<br>3</div>
             <div class="sound-btn" id="kick4">KICK<br>4</div>
             <div class="sound-btn" id="hat1">Hat<br>1</div>
@@ -63,16 +60,16 @@
             <div class="sound-btn" id="guitar3">Guitar<br>3</div>
         </div>
         <div class="row">
-            <div class="sound-btn"id="clap1">Clap 1</div>
-            <div class="sound-btn"id="clap2">Clap 2</div>
-            <div class="sound-btn"id="cymbal1">Cymbal 1</div>
-            <div class="sound-btn"id="cymbal2">Cymbal 2</div>
-            <div class="sound-btn"id="VOC1">VOC 1</div>
-            <div class="sound-btn"id="VOC2">VOC 2</div>
-            <div class="sound-btn"id="guitar4">Guitar 4</div>
+            <div class="sound-btn" id="clap1">Clap 1</div>
+            <div class="sound-btn" id="clap2">Clap 2</div>
+            <div class="sound-btn" id="cymbal1">Cymbal 1</div>
+            <div class="sound-btn" id="cymbal2">Cymbal 2</div>
+            <div class="sound-btn" id="VOC1">VOC 1</div>
+            <div class="sound-btn" id="VOC2">VOC 2</div>
+            <div class="sound-btn" id="guitar4">Guitar 4</div>
         </div>
     </div>
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
 </body>
 
 </html>

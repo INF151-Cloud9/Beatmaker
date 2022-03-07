@@ -81,7 +81,7 @@
 }
 
 .loops {
-    background-color:rgba(227, 184, 184, 1);
+    background-color:rgb(39, 63, 83);
     height: 100%;
     width: 15%;
     margin: 0 auto;
@@ -103,11 +103,11 @@
     user-select: none;
 }
 
-.loops:hover {
-    background-color: rgb(157, 96, 104);
-}
-.loops:active {
-    background-color: rgb(208, 122, 133);
+.loops:hover  {
+    background-color: rgb(58, 87, 119) !important;
 }
 
+.loops:active  {
+    background-color: rgb(58, 112, 119) !important;
+}
 
