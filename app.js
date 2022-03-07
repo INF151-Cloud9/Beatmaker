@@ -55,19 +55,32 @@ function playLoop(loop, id) {
 }
 
 //SOUNDBOARD SOUNDS
-var kick1 = new Audio(encodeURIComponent("./Samples/808/808 - 808 Mini - C.wav"));
-var kick2 = new Audio(encodeURIComponent("Samples/808/808 - Apex 808 - C.wav"));
-var kick3;
-var kick4;
+var kick1 = new Audio(encodeURIComponent("Samples/Kick/Kick - Boxcutter Kick.wav"));
+var kick2 = new Audio(encodeURIComponent("Samples/Kick/Kick - Careless Kick - G#.wav"));
+var kick3 = new Audio(encodeURIComponent("Samples/Kick/Kick - Tin Clip Kick - G.wav"));
+var kick4 = new Audio(encodeURIComponent("Samples/Kick/Kick- Tape Noise Kick.wav"));
 
 var hat1 = new Audio(encodeURIComponent("Samples/Hihat/Hat - Classic Hihat.wav"));
+var hat2 = new Audio(encodeURIComponent("Samples/Hihat/Hat - Drill Hihat.wav"));
+var hat3 = new Audio(encodeURIComponent("Samples/Hihat/Hat - Winter Open Hihat.wav"));
+
+var snare1  = new Audio(encodeURIComponent("Samples/Snare/Snare - Drip Snare 1 - D#.wav"));
+var snare2 = new Audio(encodeURIComponent("Samples/Snare/Snare - Rollerblade Snare - G.wav"));
+var snare3 = new Audio(encodeURIComponent("Samples/Snare/Snare - Trap Snare - G.wav"));
+
+var _808_1 = new Audio(encodeURIComponent("./Samples/808/808 - 808 Mini - C.wav"));
+var _808_2 = new Audio(encodeURIComponent("Samples/808/808 - Apex 808 - C.wav"));
+var _808_3 = new Audio(encodeURIComponent("Samples/808/808 - Blown 808 - C.wav"));
+var _808_4 = new Audio(encodeURIComponent("Samples/808/808 - Crucial 808 - C.wav"));
+var _808_5 = new Audio(encodeURIComponent("Samples/808/808 - Exhaust 808 - C.wav"));
+var _808_6 = new Audio(encodeURIComponent("Samples/808/808- Sicko 808 - C.wav"));
+
 
 //Plays a soundboard sound
 function play(sound) {
     sound.currentTime = 0;
     sound.play();
 }
-
 
 document.addEventListener('keydown', (event) => {
     //to prevent spamming of sounds when holding down a key
@@ -101,38 +114,52 @@ function soundInput(event) {
     switch (event.key) {
         case 'q':
             play(kick1);
+            
             break;
         case 'w':
             play(kick2);
             break;
         case 'e':
+            play(kick3);
             break;
         case 'r':
-            play(hat1);
+            play(kick4);
             break;
         case 't':
+            play(hat1);
             break;
         case 'y':
+            play(hat2);
             break;
         case 'u':
+            play(hat3);
             break;
         case 'i':
+            play(snare1);
             break;
         case 'o':
+            play(snare2);
             break;
         case 'p':
+            play(snare3);
             break;
         case 'a':
+            play(_808_1);
             break;
         case 's':
+            play(_808_2);
             break;
         case 'd':
+            play(_808_3);
             break;
         case 'f':
+            play(_808_4);
             break;
         case 'g':
+            play(_808_5);
             break;
         case 'h':
+            play(_808_6);
             break;
         case 'j':
             break;
