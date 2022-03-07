@@ -1,0 +1,113 @@
+#timeline {
+    width: 100%;
+    height: 15em;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sound-board {
+    margin-top: 60px;
+}
+
+.sound-btn {
+    height: 4.5em;
+    width: 4.5em;
+    background-color: aquamarine;
+    text-align: center;
+    margin: 10px;
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;    
+    line-height: 23px;
+    text-transform: uppercase;
+
+    user-select: none;
+    transition: box-shadow .3s;
+}
+
+.sound-btn:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.5); 
+}
+
+.row {
+    /* display: inline-block; */
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#kick1, #kick2, #kick3, #kick4 { 
+    background-color: #E39292;
+}
+
+#hat1, #hat2, #hat3 {
+    background-color: #F9D2BC;
+}
+
+#snare1, #snare2, #snare3 {
+    background-color: #D4B381;
+}
+
+#_808-1, #_808-2, #_808-3, #_808-4, #_808-5, #_808-6 {
+    background-color: #BEB585;
+}
+
+#guitar1, #guitar2, #guitar3, #guitar4{
+    background-color: rgba(227, 184, 184, 1)
+}
+
+#clap1, #clap2 {
+    background-color: #B8E1E3;
+}
+
+#cymbal1, #cymbal2 {
+    background-color: #B8C9E3;
+}
+
+#VOC1, #VOC2 {
+    background-color: #CBB8E3;
+}
+
+.loops {
+    background-color:rgba(227, 184, 184, 1);
+    height: 100%;
+    width: 15%;
+    margin: 0 auto;
+    border-radius: 50px;
+
+    text-align: center;
+    font-family: Aldrich;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;    
+    line-height: 23px;
+    text-transform: uppercase;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+}
+
+.loops:hover {
+    background-color: rgb(157, 96, 104);
+}
+.loops:active {
+    background-color: rgb(208, 122, 133);
+}
+
+
