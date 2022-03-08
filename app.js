@@ -75,6 +75,21 @@ var _808_4 = new Audio(encodeURIComponent("Samples/808/808 - Crucial 808 - C.wav
 var _808_5 = new Audio(encodeURIComponent("Samples/808/808 - Exhaust 808 - C.wav"));
 var _808_6 = new Audio(encodeURIComponent("Samples/808/808- Sicko 808 - C.wav"));
 
+var adrenaline_clap = new Audio(encodeURIComponent("Samples/Clap/Cymantics - Adrenaline Clap.wav"));
+var multistack_clap = new Audio(encodeURIComponent("Samples/Clap/Cymantics - Multistack Clap.wav"));
+
+var dimension_cymbal = new Audio(encodeURIComponent("Samples/Cymbal/Cymbal - Dimension Crash.wav"));
+var gravel_cymbal = new Audio(encodeURIComponent("Cymbal- Gravel Crash.wav"));
+
+var chill_guitar_19 = new Audio(encodeURIComponent("Samples/Guitar Samples/Guitar - Vibrations Chill Guitar Loop 19 - 150 BPM A Maj.wav"));
+var chill_guitar_8 = new Audio(encodeURIComponent("Samples/Guitar Samples/Guitar - Vibrations Chill Guitar Loop 8 - 140 BPM D Maj.wav"));
+var hiphop_guitar = new Audio(encodeURIComponent("Samples/Guitar Samples/Guitar - Vibrations Hip Hop Guitar Loop 18 - 160 BPM F Maj.wav"));
+var pop_guitar = new Audio(encodeURIComponent("Samples/Guitar Samples/Guitar - Vibrations Pop Guitar Loop 6 - 100 BPM G Maj.wav"));
+
+var breath_vox = new Audio(encodeURIComponent("Samples/Vocal/Vocal-Breath Vox.wav"));
+var chihuahua_vox = new Audio(encodeURIComponent("Samples/Vocal/Vocal - Chihuahua Vox.wav"));
+
+
 
 //Plays a soundboard sound
 function play(sound) {
@@ -162,24 +177,34 @@ function soundInput(event) {
             play(_808_6);
             break;
         case 'j':
+            play(chill_guitar_19);
             break;
         case 'k':
+            play(chill_guitar_8);
             break;
         case 'l':
+            play(hiphop_guitar);
             break;
         case 'z':
+            play(adrenaline_clap);
             break;
         case 'x':
+            play(multistack_clap);
             break;
         case 'c':
+            play(dimension_cymbal);
             break;
         case 'v':
+            play(gravel_cymbal);
             break;
         case 'b':
+            play(breath_vox);
             break;
         case 'n':
+            play(chihuahua_vox);
             break;
         case 'm':
+            play(pop_guitar);
             break;
     }
 }
